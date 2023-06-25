@@ -1,0 +1,302 @@
+/* Reset some default styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script&family=Oswald:wght@300;400&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+
+ --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+* {
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
+
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -60px;
+    margin-right: 20px;
+  }
+  
+  .logo-wrapper img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  
+}
+nav {
+    flex-grow: 1; /* Added */
+    margin-left: 20px; /* Added */
+  }
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 20px; /
+}
+
+nav ul {
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero section styles */
+#hero-section {
+  position: relative;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#hero-section {
+  position: relative;
+  height: 90vh; /* Set the height to 50% of the viewport height */
+  
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire slide */
+}
+
+/* Add styles for the remaining sections below */
+
+
+
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #ff8c00;
+  padding: 12px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4a381c;
+}
+
+/* Sections styles */
+.about-ces,
+.algorica,
+.events,
+.ennexus,
+.members {
+  background-color: #ffd580;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-ces h2,
+.algorica h2,
+.events h2,
+.ennexus h2,
+.members h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-ces p,
+.algorica p,
+.events p,
+.ennexus p,
+.members p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 24px;
+  
+}
+
+.pp{
+
+    color: #f5f5f5;
+    
+}
+
+.pp a:hover{
+    text-decoration: underline;
+}
+
+
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode-toggle {
+    background-color: #dec7c7;
+    color: #c44343;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .dark-mode-toggle:hover {
+    background-color: #f5f5f5;
+  }
+
+  body {
+  background-color: #f5f5f5; /* Default background color */
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode body {
+  background-color: #333; /* Dark mode background color */
+}
+
+section {
+  background-color: #fff; /* Default section background color */
+}
+
+.dark-mode section {
+  background-color: #555; /* Dark mode section background color */
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 50px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  .about-ces h2,
+  .algorica h2,
+  .events h2,
+  .ennexus h2,
+  .members h2 {
+    font-size: 24px;
+  }
+
+  .about-ces p,
+  .algorica p,
+  .events p,
+  .ennexus p,
+  .members p {
+    font-size: 16px;
+  }
+}
