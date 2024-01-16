@@ -300,3 +300,20 @@ section {
     font-size: 16px;
   }
 }
+
+.hide-button {
+  position: fixed;
+  top: 880px;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hide-button:hover {
+  background-color: #3498db;
+}
